@@ -1,0 +1,79 @@
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+main {
+  width: 30%;
+  display: flex!important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.allDataBtn{
+  width: 50%;
+  margin: 40px 0px;
+}
+.allDataBtn button{
+  width: 100%
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  height: fit-content;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  max-height: 30px;
+}
+th {
+  background-color: #282a35;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+td {
+  font-size: 16px;
+}
+tr:hover {
+  color: #fff;
+  background-color: #04aa6d;
+}
+.addStudentBtn {
+  margin: 40px 0px;
+}
+.addStudentBtn button, button{
+    background: #04aa6d;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.2rem;
+}

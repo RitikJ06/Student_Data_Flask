@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+</head>
+
+<body>
+    <main>
+        <h1>Student Data Form</h1>
+        {% if message %}
+            <h3>{{message}}</h3>
+        {% endif %}
+        <form method="POST" action="./">
+            <div class="formRow">
+                <label>Name: </label>
+                <input name="name" type="text" required />
+            </div>
+            <div class="formRow">
+                <label>Email: </label>
+                <input name="email" type="email" required />
+            </div>
+            <div class="formRow">
+                <label>College: </label>
+                <input name="college" type="text" required />
+            </div>
+            <div class="formRow">Duration: </div>
+            <div class="formRow">
+                <label>Start:</label>
+                <input name="start" type="number" required />
+            </div>
+            <div class="formRow">
+                <label>End:</label>
+                <input name="end" type="number" required />
+            </div>
+            <button>Submit</button>
+        </form>
+        <a class="allDataBtn" href="./students">
+            <button >Show All Students</button>
+        </a>
+    </main>
+</body>
+
+</html>
